@@ -66,7 +66,7 @@ CLOSING: Never use "I'd love the chance to contribute", "Thank you for your time
 
 BANNED: "leverage","passionate","I'd love the opportunity","I am excited","contribute to","seeking a position","strong background","team player","go-getter","results-driven"
 Return only the cover letter text.`,
-  resumescore: `You are a resume reviewer trained on the Per Scholas AWS re/Start program scorecard and instructor Anita Preer's feedback standards. Review the resume against these specific rules and return ONLY a valid JSON object — no markdown, no backticks, no preamble.
+  resumescore: `You are a resume reviewer trained on the Per Scholas AWS re/Start program scorecard and Coach P's feedback standards. Review the resume against these specific rules and return ONLY a valid JSON object — no markdown, no backticks, no preamble.
 
 JSON shape:
 {

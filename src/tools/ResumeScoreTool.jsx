@@ -54,7 +54,7 @@ export default function ResumeScoreTool({ profile }) {
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
       <div style={{ background: "var(--color-background-secondary)", borderRadius: "var(--border-radius-md)", padding: "9px 14px", fontSize: 13, color: "var(--color-text-secondary)", lineHeight: 1.5 }}>
-        Scores your resume against the <strong>Per Scholas AWS re/Start scorecard</strong> — 13 rules based on Anita Preer's feedback standards.
+        Scores your resume against the <strong>Per Scholas AWS re/Start scorecard</strong> — 13 rules based on Coach P's feedback standards.
       </div>
 
       <UploadZone label="Upload your resume" onFile={handleFile} />
