@@ -1,5 +1,7 @@
 # Inkova
 
+![Inkova Banner](InkovaReadMe.png)
+
 **The problem:** AI writing tools cost $20–$30/month per person, send your data to third-party servers, and still produce text that gets flagged as AI-generated. For families, that's $60–$120/month for something that doesn't even work reliably.
 
 **The solution:** Inkova runs entirely on your own machine using Ollama — a free, open-source AI runtime. No subscriptions. No API keys. No data leaves your computer. One install, unlimited use for everyone in your household.
