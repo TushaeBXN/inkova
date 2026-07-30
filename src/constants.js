@@ -1,6 +1,6 @@
 export const TOOLS = [
   { id:"brainstorm",  label:"Brainstorm",    icon:"💡", group:"writing",   desc:"Think through ideas together" },
-  { id:"write",       label:"Write",          icon:"✍️",  group:"writing",   desc:"AI-assisted content creation" },
+  { id:"write",       label:"Write",          icon:"✍🏾", group:"writing",   desc:"AI-assisted content creation" },
   { id:"humanize",    label:"Humanize",       icon:"🧑🏾", group:"writing",   desc:"Make AI text feel natural" },
   { id:"polish",      label:"Polish",         icon:"✨",  group:"writing",   desc:"Clean up grammar & style" },
   { id:"summarize",   label:"Summarize",      icon:"📋",  group:"writing",   desc:"Condense any text" },
