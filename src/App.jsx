@@ -8,6 +8,7 @@ import TextTool from "./tools/TextTool.jsx";
 import DetectionTool from "./tools/DetectionTool.jsx";
 import ATSTool from "./tools/ATSTool.jsx";
 import CareerTool from "./tools/CareerTool.jsx";
+import ResumeScoreTool from "./tools/ResumeScoreTool.jsx";
 
 export default function App() {
   const [screen, setScreen] = useState("profiles");
@@ -34,6 +35,7 @@ export default function App() {
           {["aidetector", "grammar", "plagiarism"].includes(active) && <DetectionTool toolId={active} profile={profile} />}
           {active === "ats" && <ATSTool profile={profile} />}
           {["resume", "coverletter"].includes(active) && <CareerTool toolId={active} profile={profile} />}
+          {active === "resumescore" && <ResumeScoreTool profile={profile} />}
         </div>
       </div>
     </div>

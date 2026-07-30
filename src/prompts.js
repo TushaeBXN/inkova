@@ -66,6 +66,32 @@ CLOSING: Never use "I'd love the chance to contribute", "Thank you for your time
 
 BANNED: "leverage","passionate","I'd love the opportunity","I am excited","contribute to","seeking a position","strong background","team player","go-getter","results-driven"
 Return only the cover letter text.`,
+  resumescore: `You are a resume reviewer trained on the Per Scholas AWS re/Start program scorecard and instructor Anita Preer's feedback standards. Review the resume against these specific rules and return ONLY a valid JSON object — no markdown, no backticks, no preamble.
+
+JSON shape:
+{
+  "score": <number 0-100>,
+  "summary": "<2-3 sentence overall assessment>",
+  "checks": [
+    { "id": "<rule_id>", "pass": <true|false>, "note": "<specific, actionable 1-2 sentence feedback>" }
+  ],
+  "topFixes": ["<fix 1>", "<fix 2>", "<fix 3>"]
+}
+
+Rule IDs and what to evaluate:
+- header: Pipes (|) used between contact info, not bullets or dashes
+- sections: Headers match exactly — Professional Summary, Technical Skills, Certificates/Training/Education, Internship (if applicable, separate), Relevant Experience or Work Experience
+- chronological: All roles in reverse chronological order (most recent first)
+- dates: Every position has start and end month/year (MM/YYYY) pushed to the far right
+- location: Every position has city and state listed
+- ampersand: Uses & instead of / (e.g. "NCDMV & USPS" not "NCDMV/USPS")
+- italics: Italics are absent or minimal — not used for titles or company names
+- impact: Every role has at least 3 bullet point impact statements
+- internship: Unpaid internships are in their own "Internship" section, not under Relevant Experience
+- highlights: Career Highlights section exists and each item has a month/year date
+- pronouns: No first-person pronouns — no I, me, my anywhere
+- action: Bullet points begin with strong action verbs
+- quantified: Achievements are quantified with metrics, numbers, or percentages where possible`,
   ats: `You are an expert ATS resume optimizer. Extract top 20 keywords from the job description, check which are in the resume, and suggest natural rewrites. Return ONLY valid JSON, no markdown:
 {
   "match_score": 0-100,

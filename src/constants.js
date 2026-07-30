@@ -11,6 +11,7 @@ export const TOOLS = [
   { id:"resume",      label:"Resume",         icon:"📄",  group:"career",    desc:"Tailor resume to a job" },
   { id:"coverletter", label:"Cover Letter",   icon:"📩",  group:"career",    desc:"Write a targeted cover letter" },
   { id:"ats",         label:"ATS Optimizer",  icon:"🎯",  group:"career",    desc:"Match resume keywords to a job" },
+  { id:"resumescore", label:"Resume Score",   icon:"📊",  group:"career",    desc:"Per Scholas 13-rule scorecard" },
 ];
 
 export const GROUPS = [
